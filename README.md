@@ -146,9 +146,7 @@ The Multinomial Naive Bayes achieved the highest F1-Score, recording 0.97307 on 
 # Conclusion
 In conclusion, this exploratory journey into South Africa's linguistic diversity leveraged advanced Natural Language Processing (NLP) techniques to unravel nuances within the country's 11 official languages. The analysis, spanning from visualizing unique words to uncovering shared vocabulary, yielded a comprehensive understanding of the linguistic landscape. The preprocessing pipeline involved TF-IDF vectorization, dimensionality reduction with SelectKBest and F-statistic, and meticulous training on well-split datasets, ensuring a robust approach.
 
-Three models—Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes—were rigorously evaluated, with Multinomial Naive Bayes emerging as the most effective. The meticulous tracking of model performance using Comet added transparency and reproducibility to the experimentation. The culmination of these efforts was evident in Kaggle submissions, where Multinomial Naive Bayes not only outperformed its counterparts but also secured an impressive position on the leaderboard. This comprehensive exploration not only enriched insights into South Africa's linguistic fabric but also showcased the potential of NLP techniques in advancing language-specific applications within multicultural societies.
+Three models Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes were rigorously evaluated, with Multinomial Naive Bayes emerging as the most effective. The meticulous tracking of model performance using Comet added transparency and reproducibility to the experimentation. The culmination of these efforts was evident in Kaggle submissions, where Multinomial Naive Bayes not only outperformed its counterparts but also secured an impressive position on the leaderboard. This comprehensive exploration not only enriched insights into South Africa's linguistic fabric but also showcased the potential of NLP techniques in advancing language specific applications within multicultural societies.
 
-# Citation
-ExploreAI Academy. (2023). South African Language Identification Hack 2023.
 
 
