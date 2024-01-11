@@ -134,7 +134,7 @@ The Multinomial Naive Bayes model achieved the following performance metrics:
 - Accuracy on the test dataset: 0.99924.
 
 # Comet Experiment Snapshot
-![Comet Naive Bayes](visuals/comet_naive_bayes.jpg)
+![Comet Naive Bayes](visuals/comet_naive_bayes.jpeg)
 
 # Evaluating Model Performances on Kaggle
 Each model underwent conversion into the requisite CSV file and was subsequently submitted on Kaggle to evaluate its performance on unseen data. The F1-Scores attained upon Kaggle submission are as follows:
