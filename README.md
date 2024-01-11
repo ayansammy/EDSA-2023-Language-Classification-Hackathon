@@ -139,14 +139,15 @@ The Multinomial Naive Bayes model achieved the following performance metrics:
 # Evaluating Model Performances on Kaggle
 Each model underwent conversion into the requisite CSV file and was subsequently submitted on Kaggle to evaluate its performance on unseen data. The F1-Scores attained upon Kaggle submission are as follows:
 
-Ridge Classifier Model: 0.9692
-Support Vector Classifier: 0.9692
-The Multinomial Naive Bayes achieved the highest F1-Score, recording 0.97307 on submission. This remarkable performance propelled me to the 27th position on the leaderboard, outperforming 225 other participants in the Kaggle competition.
+- Ridge Classifier Model: 0.9692
+- Support Vector Classifier: 0.9692
+- Multinomial Naive Bayes achieved the highest F1-Score, recording 0.97307 on submission. 
+
+This remarkable performance propelled me to the 27th position on the leaderboard, outperforming 225 other participants in the Kaggle competition.
 
 # Conclusion
-In conclusion, this exploratory journey into South Africa's linguistic diversity leveraged advanced Natural Language Processing (NLP) techniques to unravel nuances within the country's 11 official languages. The analysis, spanning from visualizing unique words to uncovering shared vocabulary, yielded a comprehensive understanding of the linguistic landscape. The preprocessing pipeline involved TF-IDF vectorization, dimensionality reduction with SelectKBest and F-statistic, and meticulous training on well-split datasets, ensuring a robust approach.
 
-Three models Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes were rigorously evaluated, with Multinomial Naive Bayes emerging as the most effective. The meticulous tracking of model performance using Comet added transparency and reproducibility to the experimentation. The culmination of these efforts was evident in Kaggle submissions, where Multinomial Naive Bayes not only outperformed its counterparts but also secured an impressive position on the leaderboard. This comprehensive exploration not only enriched insights into South Africa's linguistic fabric but also showcased the potential of NLP techniques in advancing language specific applications within multicultural societies.
+In conclusion, this study used advanced NLP techniques to explore South Africa's 11 official languages. The analysis revealed insights into unique and shared vocabulary, employing TF-IDF vectorization and model evaluation with Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes. Multinomial Naive Bayes emerged as the most effective, tracked transparently with Comet, and showcased impressive results on Kaggle, highlighting the potential of NLP in diverse societies.
 
 
 
