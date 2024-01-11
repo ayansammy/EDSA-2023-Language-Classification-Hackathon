@@ -1,9 +1,7 @@
 # EDSA 2023 Classification Hackathon
 
 ## Overview
-South Africa stands as a multicultural society, distinguished by its profound linguistic diversity. Language, being a vital instrument, not only serves to enhance democracy but also plays a pivotal role in shaping the multifaceted aspects of social, cultural, intellectual, economic, and political life within the South African society.
-
-Marked by the assurance of equal status for each, the country embraces a multilingual landscape with 11 official languages. The majority of South Africans exhibit multilingualism, proficiently speaking two or more of these designated official languages. Given the widespread multilingual proficiency among the population, it becomes evident that our systems and devices must effectively communicate in a diverse linguistic environment.
+South Africa's rich linguistic diversity presents a unique challenge, necessitating an adept language identification system. The 11 official languages demand precise communication, prompting the implementation of advanced Natural Language Processing (NLP) techniques. This exploration endeavors to enhance communication by developing a versatile language identification algorithm tailored to South Africa's linguistic nuances.
 
 # Objectives
 In this intriguing challenge, I embarked on a journey to:
@@ -97,3 +95,60 @@ The Afrikaans language texts prominently feature terms such as "en," "van," "moe
 ![Frequent Text](visuals/frequent_text.png)
 
 In general, analysis of the 11 different languages reveals both commonalities and distinctions among the most frequent texts in the dataset. Some terms, such as "en," "van," "moet," and "die," consistently appear, hinting at shared vocabulary or loanwords across multiple languages. However, each language exhibits unique terms, contributing to distinct patterns observed in the visualization. This diversity of language-specific texts underscores the importance of a robust language identification system capable of accurately distinguishing between the 11 official languages in South Africa's multilingual environment.
+
+# Data Engineering
+## Text Vectorization: 
+Text data underwent TF-IDF vectorization, a crucial step applied consistently to both the training and test datasets.
+
+## Train-Test Split
+The training dataset was divided into two subsets, X_train and X_test, along with their corresponding language labels, y_train and y_test. This division was performed using the train_test_split method with a specified test size of 20% and a random seed of 50 for reproducibility.
+
+## Feature Selection for Dimension Reduction
+Implemented SelectKBest utilizing the F-statistic to identify and retain the most influential 21,000 features, thereby optimizing dimensionality for improved model efficiency.
+
+# Model Selection
+Three distinct models were evaluated during the experimentation phase:
+- Ridge Classifier Model.
+- Support Vector Classifier.
+- Naive Bayes.
+
+## Snapshot of Ridge Classifier Model Classification Report
+![Ridge Model](visuals/ridge_model.PNG)
+
+The classification report shows that;  the Ridge Classifier Model demonstrates outstanding accuracy and effectiveness in classifying texts into their respective languages, as evidenced by having high precision, recall, and F1-score of 1.00 values for each language class.
+
+##  Model Evaluation
+The model achieved an F1-score of 0.99878 on the test dataset, indicating also high precision and recall performance.
+
+## For Support Vector Classifier Evaluation
+The classification report for the Support Vector Classifier (SVC) mirrors that of the Ridge Classifier Model. Leveraging hyperparameter tuning with a gamma type for SVC, it achieved a comparable F1-Score of 0.9986, aligning closely with the performance observed in the Ridge Classifier Model.
+
+## Snapshot of Multinomial Naive Bayes Model Classification Report
+![Naive Bayes](visuals/naive_bayes.PNG)
+
+The classification report for the Multinomial Naive Bayes model reveals exceptional performance, with precision, recall, and F1-score consistently reaching 1.00 across all language classes. This remarkable accuracy highlights the model's effectiveness in accurately classifying texts into their respective languages, surpassing the performance of the other models.
+
+## Model Evaluation
+The Multinomial Naive Bayes model achieved the following performance metrics:
+- F1-Score on the test dataset: 0.99924.
+- Accuracy on the test dataset: 0.99924.
+
+# Comet Experiment Snapshot
+![Comet Naive Bayes](visuals/comet_naive_bayes.jpg)
+
+# Evaluating Model Performances on Kaggle
+Each model underwent conversion into the requisite CSV file and was subsequently submitted on Kaggle to evaluate its performance on unseen data. The F1-Scores attained upon Kaggle submission are as follows:
+
+Ridge Classifier Model: 0.9692
+Support Vector Classifier: 0.9692
+The Multinomial Naive Bayes achieved the highest F1-Score, recording 0.97307 on submission. This remarkable performance propelled me to the 27th position on the leaderboard, outperforming 225 other participants in the Kaggle competition.
+
+# Conclusion
+In conclusion, this exploratory journey into South Africa's linguistic diversity leveraged advanced Natural Language Processing (NLP) techniques to unravel nuances within the country's 11 official languages. The analysis, spanning from visualizing unique words to uncovering shared vocabulary, yielded a comprehensive understanding of the linguistic landscape. The preprocessing pipeline involved TF-IDF vectorization, dimensionality reduction with SelectKBest and F-statistic, and meticulous training on well-split datasets, ensuring a robust approach.
+
+Three models—Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes—were rigorously evaluated, with Multinomial Naive Bayes emerging as the most effective. The meticulous tracking of model performance using Comet added transparency and reproducibility to the experimentation. The culmination of these efforts was evident in Kaggle submissions, where Multinomial Naive Bayes not only outperformed its counterparts but also secured an impressive position on the leaderboard. This comprehensive exploration not only enriched insights into South Africa's linguistic fabric but also showcased the potential of NLP techniques in advancing language-specific applications within multicultural societies.
+
+# Citation
+ExploreAI Academy. (2023). South African Language Identification Hack 2023.
+
+
