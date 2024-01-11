@@ -147,7 +147,7 @@ This remarkable performance propelled me to the 27th position on the leaderboard
 
 # Conclusion
 
-In conclusion, this study used advanced NLP techniques to explore South Africa's 11 official languages. The analysis revealed insights into unique and shared vocabulary, employing TF-IDF vectorization and model evaluation with Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes. Multinomial Naive Bayes emerged as the most effective, tracked transparently with Comet, and showcased impressive results on Kaggle, highlighting the potential of NLP in diverse societies.
+In conclusion, this task used advanced NLP techniques to explore South Africa's 11 official languages. The analysis revealed insights into unique and shared vocabulary, employing TF-IDF vectorization and model evaluation with Ridge Classifier, Support Vector Classifier, and Multinomial Naive Bayes. Multinomial Naive Bayes emerged as the most effective, tracked transparently with Comet, and showcased impressive results on Kaggle, highlighting the potential of NLP in diverse societies.
 
 
 
